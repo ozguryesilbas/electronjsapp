@@ -1,0 +1,12 @@
+electronjsapp isminde klasör oluşturup idea ile açtık
+npm init komutuyla projeyi oluşturduk ve çıkan bilgileri enter ile geçtik
+aşağıdaki komutla electron projesi için gerekli dosyaları getirdik
+npm install --save electron
+ilgili modüller geldi
+package.json'da "start" : "electron ." komutu yazdıkki kolay çalıştıralım
+index.js i main.js yaptık ve main.js dosyamızı oluşturduk
+ana modülümüz main.js dosyası olucak
+main.js içini doldurduk
+main.html dosyasını oluşturduk ve içini doldurduk
+assets altına bootstrap min dosyasını ekledik ve html sayfasında bunu import ettik
+npm start komutuyla projeyi çalıştırdık
