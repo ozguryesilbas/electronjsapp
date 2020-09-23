@@ -2,7 +2,7 @@ const electron = require("electron");
 const url = require("url");
 const path = require("path");
 
-const { app, BrowserWindow } =  electron;
+const { app, BrowserWindow, Menu } =  electron;
 
 let mainWindow;
 
@@ -19,4 +19,22 @@ app.on('ready', () => {
 
     //alert(); alert metodu nodejs'de çalışmaz, çünkü backend tarafındayız
     console.log("ElectronJs App...");
+
+    const mainMenu = new Menu.buildFromTemplate(mainMenuTemplete);
+    Menu.setApplicationMenu(mainMenu);
 })
+
+const mainMenuTemplete = [
+    {
+        label : "Dosya",
+        submenu : [
+            {
+                label : "Yeni Todo Ekle"
+            },
+            {
+                label : "Tümünü Sil"
+            }
+
+        ]
+    }
+]
